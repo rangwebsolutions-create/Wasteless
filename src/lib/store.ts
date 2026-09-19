@@ -20,6 +20,34 @@ const demoHotspots: Hotspot[] = [
     photo_data: demoPhoto('Before cleanup', '#788e68'), after_photo_data: demoPhoto('After cleanup', '#49906c'), cleanup_mode: 'public',
     photo_lat: null, photo_lng: null, photo_timestamp: null, description: 'Plastic bottles and packaging by the marina.', cleanup_description: 'Collected the visible plastic bottles and packaging. Two bags were removed.', verification_votes: [], comments: [{ id: 'demo-comment', text: 'The area looks much better. Please check the edge near the path too.', createdAt: '2026-09-12T10:00:00.000Z' }], created_by: null,
   },
+<<<<<<< Updated upstream
+=======
+  {
+    id: 'demo-park-open', lat: 30.4350, lng: -9.5850, severity_score: 2,
+    status: 'open', created_at: '2026-09-13T10:00:00.000Z',
+    photo_data: demoPhoto('Park waste', '#8f7a6d'), after_photo_data: null, cleanup_mode: 'public',
+    photo_lat: null, photo_lng: null, photo_timestamp: null, description: 'Scattered plastic and paper waste near the park benches.', cleanup_description: null, verification_votes: [], comments: [], created_by: null,
+  },
+  {
+    id: 'demo-near-resolution', lat: 30.4150, lng: -9.5950, severity_score: 3,
+    status: 'pending_review', created_at: '2026-09-14T10:00:00.000Z',
+    photo_data: demoPhoto('Before cleanup', '#7a6d8f'), after_photo_data: demoPhoto('After cleanup', '#6d8f7a'), cleanup_mode: 'public',
+    photo_lat: null, photo_lng: null, photo_timestamp: null, description: 'Construction debris and packaging materials near the roadside.', cleanup_description: 'Removed all construction debris and sorted recyclable materials. Area is now clear.', verification_votes: [
+      { reviewerId: 'demo-fake-reviewer-1', verdict: 'clean', createdAt: '2026-09-14T11:00:00.000Z' },
+      { reviewerId: 'demo-fake-reviewer-2', verdict: 'clean', createdAt: '2026-09-14T12:00:00.000Z' },
+    ], comments: [], created_by: null,
+  },
+  {
+    id: 'demo-resolved-beach', lat: 30.4300, lng: -9.6200, severity_score: 4,
+    status: 'resolved', created_at: '2026-09-08T10:00:00.000Z',
+    photo_data: demoPhoto('Before cleanup', '#8f6d6d'), after_photo_data: demoPhoto('After cleanup', '#6d8f6d'), cleanup_mode: 'public',
+    photo_lat: null, photo_lng: null, photo_timestamp: null, description: 'Heavy litter accumulation near beach access point.', cleanup_description: 'Complete cleanup performed. Removed 3 large bags of mixed waste including plastics, glass, and food packaging.', verification_votes: [
+      { reviewerId: 'demo-fake-reviewer-1', verdict: 'clean', createdAt: '2026-09-09T10:00:00.000Z' },
+      { reviewerId: 'demo-fake-reviewer-2', verdict: 'clean', createdAt: '2026-09-09T11:00:00.000Z' },
+      { reviewerId: 'demo-fake-reviewer-3', verdict: 'clean', createdAt: '2026-09-09T12:00:00.000Z' },
+    ], comments: [{ id: 'demo-resolved-comment', text: 'Great work! The beach looks pristine now.', createdAt: '2026-09-09T13:00:00.000Z' }], created_by: null,
+  },
+>>>>>>> Stashed changes
 ]
 
 export function loadHotspots(): Hotspot[] {

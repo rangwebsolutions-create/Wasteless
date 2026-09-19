@@ -117,8 +117,13 @@ export default function App() {
     setHotspots((items) => [hotspot, ...items]); addActivity('reports'); addXp(XP_PER_REPORT); setPendingLatLng(null); showToast(t('reportSuccess', { xp: XP_PER_REPORT }))
   }
   function handleCleanupSubmitted(hotspotId: string, updated: Pick<Hotspot, 'after_photo_data' | 'photo_lat' | 'photo_lng' | 'photo_timestamp' | 'cleanup_mode' | 'cleanup_description'>) { setHotspots((items) => items.map((item) => item.id === hotspotId ? { ...item, ...updated, status: 'pending_review', verification_votes: [] } : item)); addActivity('cleanups'); addXp(XP_PER_CLEANUP); setClaimHotspot(null); showToast(t('cleanupSentForReview', { xp: XP_PER_CLEANUP })) }
+<<<<<<< Updated upstream
   function handleVote(hotspotId: string, verdict: VerificationVote['verdict']) {
     const reviewerId = getReviewerId(); let approved = false
+=======
+  function handleVote(hotspotId: string, verdict: VerificationVote['verdict'], demoReviewerId?: string) {
+    const reviewerId = demoReviewerId || getReviewerId(); let approved = false
+>>>>>>> Stashed changes
     setHotspots((items) => items.map((item) => { if (item.id !== hotspotId || item.verification_votes.some((vote) => vote.reviewerId === reviewerId)) return item; const verification_votes = [...item.verification_votes, { reviewerId, verdict, createdAt: new Date().toISOString() }]; approved = verification_votes.filter((vote) => vote.verdict === 'clean').length >= VERIFICATION_THRESHOLD; return { ...item, verification_votes, status: approved ? 'resolved' : item.status } }))
     addActivity('reviews'); addXp(XP_PER_REVIEW); showToast(approved ? t('cleanupResolvedByCommunity') : t('voteRecorded', { xp: XP_PER_REVIEW }))
   }
