@@ -1865,7 +1865,10 @@ html, body {
 .review-actions { display:flex; gap:10px; padding: 0 12px 14px; }.review-actions button { flex:1; min-height:42px; border-radius:12px; border:1px solid #d8e0d5; background:#fff; color:#63756c; font-weight:700; cursor:pointer; }.review-actions .deploy-btn { color:#fff; border:0; margin:0; padding:0 12px; }.review-voted { margin:0 12px 14px; padding:10px; border-radius:10px; color:#477b38; background:#eff7e9; font-size:11px; }
 .review-comments { border-top:1px solid #edf0eb; padding:13px; }.review-comments h3 { margin:0 0 10px; font-size:12px; }.review-comments h3 span { color:#84938a; }.review-comments p { margin:6px 0; color:#53675d; font-size:12px; line-height:1.4; }.review-comments form { display:flex; gap:7px; margin-top:10px; }.review-comments input { min-width:0; flex:1; border:1px solid #dce4d9; border-radius:10px; padding:10px; font:12px var(--font); }.review-comments form button { border:0; border-radius:10px; padding:0 13px; background:#1d6144; color:#fff; font-weight:700; cursor:pointer; }.review-empty { padding:58px 20px; text-align:center; color:#64786c; }.review-empty span { font-size:32px; color:#72a45a; }.review-empty h3 { color:#203d30; }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 /* Demo reviewer switcher */
 .demo-reviewer-switcher { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 12px 18px; background: rgba(255,255,255,0.7); backdrop-filter: blur(8px); border-bottom: 1px solid #dce4d9; margin: 0 16px 12px; border-radius: 12px; }
@@ -1874,6 +1877,9 @@ html, body {
 .demo-reviewer-btn { padding: 6px 12px; border: 1px solid #dce4d9; background: #fff; color: #63756c; border-radius: 8px; font-size: 11px; font-weight: 700; cursor: pointer; transition: all var(--transition); }
 .demo-reviewer-btn:hover { border-color: #9fcf86; color: #4d873b; }
 .demo-reviewer-btn.active { background: #23764d; color: #fff; border-color: #23764d; }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 .live-camera__gps-warning {
   font-size: 12px;

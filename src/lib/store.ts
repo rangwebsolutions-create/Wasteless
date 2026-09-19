@@ -21,7 +21,10 @@ const demoHotspots: Hotspot[] = [
     photo_lat: null, photo_lng: null, photo_timestamp: null, description: 'Plastic bottles and packaging by the marina.', cleanup_description: 'Collected the visible plastic bottles and packaging. Two bags were removed.', verification_votes: [], comments: [{ id: 'demo-comment', text: 'The area looks much better. Please check the edge near the path too.', createdAt: '2026-09-12T10:00:00.000Z' }], created_by: null,
   },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   {
     id: 'demo-park-open', lat: 30.4350, lng: -9.5850, severity_score: 2,
     status: 'open', created_at: '2026-09-13T10:00:00.000Z',
@@ -47,6 +50,9 @@ const demoHotspots: Hotspot[] = [
       { reviewerId: 'demo-fake-reviewer-3', verdict: 'clean', createdAt: '2026-09-09T12:00:00.000Z' },
     ], comments: [{ id: 'demo-resolved-comment', text: 'Great work! The beach looks pristine now.', createdAt: '2026-09-09T13:00:00.000Z' }], created_by: null,
   },
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ]
 

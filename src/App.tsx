@@ -118,8 +118,13 @@ export default function App() {
   }
   function handleCleanupSubmitted(hotspotId: string, updated: Pick<Hotspot, 'after_photo_data' | 'photo_lat' | 'photo_lng' | 'photo_timestamp' | 'cleanup_mode' | 'cleanup_description'>) { setHotspots((items) => items.map((item) => item.id === hotspotId ? { ...item, ...updated, status: 'pending_review', verification_votes: [] } : item)); addActivity('cleanups'); addXp(XP_PER_CLEANUP); setClaimHotspot(null); showToast(t('cleanupSentForReview', { xp: XP_PER_CLEANUP })) }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   function handleVote(hotspotId: string, verdict: VerificationVote['verdict']) {
     const reviewerId = getReviewerId(); let approved = false
+=======
+  function handleVote(hotspotId: string, verdict: VerificationVote['verdict'], demoReviewerId?: string) {
+    const reviewerId = demoReviewerId || getReviewerId(); let approved = false
+>>>>>>> Stashed changes
 =======
   function handleVote(hotspotId: string, verdict: VerificationVote['verdict'], demoReviewerId?: string) {
     const reviewerId = demoReviewerId || getReviewerId(); let approved = false
